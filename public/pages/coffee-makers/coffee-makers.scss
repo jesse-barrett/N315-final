@@ -1,0 +1,155 @@
+.coffee-makers {
+  width: 100%;
+
+  .hero {
+    max-width: 1200px;
+    height: 210px;
+    margin: 0 auto 40px auto;
+    background-image: url(../../img/banner.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 100;
+      color: white;
+      font-size: 60px;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+    h1:first-of-type {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      margin-bottom: 10px;
+      letter-spacing: normal;
+      text-align: center;
+    }
+  }
+
+  .filters {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .selectors {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+
+      div {
+        padding: 15px 10px;
+        border: 2px solid rgb(161, 161, 161);
+        border-radius: 3px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: rgb(161, 161, 161);
+      }
+      div:hover {
+        border: 2px solid black;
+        color: black;
+      }
+    }
+
+    .sortby {
+      width: 150px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+  }
+
+  .products {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 25px auto;
+
+    .card {
+      width: 275px;
+      height: 450px;
+      margin: 12px;
+      padding: 20px 10px;
+      border: 2px solid white;
+      box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      position: relative;
+
+      img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      span {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 100;
+      }
+
+      button {
+        width: 205px;
+        position: absolute;
+        bottom: 30px;
+        left: 35px;
+      }
+    }
+    .card:hover {
+      border: 2px solid black;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .coffee-makers {
+    .hero {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .hero::after {
+      content: "Sort and Filter";
+      position: absolute;
+      bottom: -50px;
+      left: 20px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      border: 2px solid black;
+      border-radius: 3px;
+      padding: 10px;
+    }
+    .filters {
+      display: none;
+    }
+    .products {
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .coffee-makers {
+    .products {
+      justify-content: space-evenly;
+    }
+  }
+}

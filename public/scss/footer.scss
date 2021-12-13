@@ -1,0 +1,134 @@
+.footer {
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+
+  .contact {
+    width: 100%;
+    height: 50px;
+    padding: 0 100px 0 25px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(59, 26, 4);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+  }
+
+  .info {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      width: 25%;
+      height: 300px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+
+      h1 {
+        font-size: 25px;
+        font-weight: 200;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-weight: lighter;
+        margin-bottom: 10px;
+      }
+
+      .extra {
+        margin-bottom: 25px;
+      }
+
+      input {
+        border: 2px solid lightgray;
+        border-radius: 3px;
+        font-size: 15px;
+        padding: 10px;
+        margin-right: -10px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        font-size: 15px;
+        width: fit-content;
+        padding: 10px;
+      }
+
+      hr {
+        border: none;
+        border-bottom: 1px solid lightgray;
+      }
+
+      .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid lightgray;
+        background-color: white;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        width: 170px;
+
+        div {
+          width: 120px;
+          height: fit-content;
+          background-color: rgb(233, 233, 233);
+          border-radius: 5px;
+          font-size: 15px;
+          font-weight: lighter;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    color: grey;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    .info {
+      flex-direction: column;
+      text-align: center;
+
+      div {
+        width: 100%;
+
+        div {
+          margin: 0 auto;
+          div {
+          }
+        }
+      }
+    }
+    .copyright {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+}

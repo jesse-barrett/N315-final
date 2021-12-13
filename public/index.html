@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Makers</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-top">
+      <a href="#/coffee-makers" class="hamburger">
+        <ion-icon name="menu-outline"></ion-icon>
+      </a>
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search hundreds of ways to brew...">
+        <img src="img/search.png" alt="search">
+      </div>
+      <div class="promo">
+        <p>FREE SHIPPING $29+</p>
+      </div>
+      <div class="icons">
+        <a href="#" class="account">
+          <span>
+            <ion-icon name="person-outline"></ion-icon>
+          </span>
+        </a>
+        <a href="#/cart" class="cart-icon">
+          <span>
+            <ion-icon name="cart-outline"></ion-icon>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="nav-bottom">
+      <div class="links">
+        <a href="#/nope" class="link">Coffee, Tea & More</a>
+        <a href="#/coffee-makers" class="link">Coffee Makers</a>
+        <a href="#/nope" class="link">Accessories</a>
+        <a href="#/nope" class="link">Auto Delivery</a>
+        <a href="#/nope" class="link">Get Started</a>
+        <a href="#/nope" class="link">Gift Guide</a>
+        <a href="#/nope" class="link">Deals</a>
+        <a href="#/nope" class="link">Customize</a>
+      </div>
+    </div>
+  </nav>
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" style="display: none;"></nav>
+
+  <!-- BODY CONTENT -->
+  <!-- LOADED DYNAMICALLY WITH MVC -->
+  <div id="app">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contact">
+      <div>Find a Store • Customer Support: 866-901-BREW(2739)</div>
+      <div>Follow Us</div>
+    </div>
+    <div class="info">
+      <div>
+        <h1>Shop</h1>
+        <p>Coffee Makers</p>
+        <p class="extra">Beverages</p>
+        <h1>Orders</h1>
+        <p>Track Your Order</p>
+        <p>Returns</p>
+        <p>Auto Delivery Orders</p>
+      </div>
+      <div>
+        <h1>Helpful Info</h1>
+        <p>Register Your Appliance</p>
+        <p>Support</p>
+        <p>Product Recall</p>
+        <p>Business Solution</p>
+        <p>Site Map</p>
+        <p>Contact Us</p>
+        <p>CA Privacy Rights</p>
+        <p>Do Not Sell My Personal Information</p>
+      </div>
+      <div>
+        <h1>About Us</h1>
+        <p>About Us</p>
+        <p>News</p>
+        <p>Careers</p>
+        <p>Sustainability</p>
+        <p>Rewards Program</p>
+        <p>Accepted Payment</p>
+      </div>
+      <div>
+        <h1>Join Our Mailing List</h1>
+        <p>Stay up-to-date with the latest news and new arrivals directly to your inbox</p>
+        <input type="text" placeholder="Your email">
+        <button class="site-btn">Sign Up</button>
+        <hr>
+        <h1>Select Country</h1>
+        <div>
+          <div class="circle"></div>
+          <div>United States \/</div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+      <span>© 2021 Keurig Green Mountain, Inc. - All Rights Reserved</span> Terms of Use • Privacy Policy • Modern
+      Slavery Act
+    </div>
+  </footer>
+
+  <!-- FIREBASE SCRIPTS -->
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/9.5.0/firebase-auth-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-database-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-firestore-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-functions-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-messaging-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-storage-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-analytics-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-remote-config-compat.js"></script>
+  <script defer src="/__/firebase/9.5.0/firebase-performance-compat.js"></script>
+  <!-- 
+          initialize the SDK after all desired features are loaded, set useEmulator to false
+          to avoid connecting the SDK to running emulators.
+        -->
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+  <!-- LOCAL SCRIPTS -->
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="app/model.js"></script>
+  <script src="app/app.js"></script>
+
+  <!-- IONIC ICON SCRIPT -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+//IMPORT ALL SASS FILES HERE
+//general site styles
+@import "structure.scss";
+@import "nav.scss";
+@import "footer.scss";
+
+//specific page styles
+@import "../pages/coffee-makers/coffee-makers.scss";
+@import "../pages/cart/cart.scss";
